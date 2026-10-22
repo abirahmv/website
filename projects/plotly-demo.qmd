@@ -1,0 +1,12 @@
+---
+title: "Plotly demo"
+date: 2026-10-22
+description: "Interactive chart test — runs in the browser, no server needed."
+---
+
+```{python}
+import plotly.express as px
+
+df = px.data.iris()
+px.scatter(df, x="sepal_width", y="sepal_length", color="species")
+```
